@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "babel": "babel --presets es2015 script.js -o main.bundle.js",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "start": "electron src/index.js"
   },
   "author": "Tom Blacknell",
   "license": "ISC",
@@ -14,7 +15,9 @@
     "@babel/preset-env": "^7.8.3",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "electron": "^8.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }

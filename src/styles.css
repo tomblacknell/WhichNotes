@@ -1,0 +1,61 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #dedede;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #dedede;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #dedede;
+}
+
+h3 {
+  color: #dedede;
+}
+
+#goalChord {
+  color: red;
+}
+
+.container {
+  border: 2px solid #171717;
+  flex-grow: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+  justify-items: center;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+}
