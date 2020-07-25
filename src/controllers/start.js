@@ -15,6 +15,8 @@ const setContainsNotes = (heldNotes, goalNotes) => {
 let goalChord = chords["C Major"];
 let found = false;
 
+console.log('hello');
+
 setInterval((note) => {
   if (!found && setContainsNotes(heldNotes, goalChord)) {
     console.log('Correct! Changing goal chord...');
@@ -56,7 +58,7 @@ const changeNoteColour = (octave, note, color) => {
     .style.fill = color;
 };
 
-(() => {
+const start = () => {
   if (!navigator.requestMIDIAccess) {
     alert('Browser does not support MIDI');
     return false;
@@ -71,4 +73,6 @@ const changeNoteColour = (octave, note, color) => {
       }
     })
     .catch((err) => console.error('Failed to access MIDI', err));
-})();
+}
+
+export default start;
